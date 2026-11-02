@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <h2>Library Login</h2>
+
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p id="message"></p>
+
+    <script>
+        function login() {
+            let u = document.getElementById("username").value;
+            let p = document.getElementById("password").value;
+
+            document.getElementById("message").innerText =
+                (u == "admin" && p == "1234")
+                    ? "Login Successful"
+                    : "Invalid credentials";
+        }
+    </script>
+</body>
+
+</html>
